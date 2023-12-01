@@ -39,12 +39,46 @@ body{
 }
 #header{
     position: fixed;
-    color:whitesmoke;
+    color:gainsboro;
     z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(00,00,00,1);
+    height: 2.8rem;
 }
-.flexHeader{
+#navHeader{
     display: flex;
-    justify-content: flex-start;
+    margin-right: auto;
     flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    width: 7rem;
+    height: 5rem;
+}
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    padding:0rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 30%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+button:hover {
+    color: yellow;
+    background: black;
+}
+.addPadding{
+    padding-bottom: 1rem;
+}
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
 }
 
