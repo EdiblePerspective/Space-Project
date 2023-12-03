@@ -4,6 +4,9 @@ body{
     cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Rocket_cursor.png'), progress; /*progress to mess with people*/
     background-color: rgb(00,00,00,1);
 }
+.moon{
+    background-image: url("./media/moon.jpg");
+}
 .mediaSpecs{
     height:100vh;
     width:100vw;
@@ -13,16 +16,23 @@ body{
     background-position: center; 
     position: relative;
 }
+.rocket{
+    background-image: url("./media/rocket.jpg");
+    background-size:contain;
+}
 .textB{
-    position: absolute;
-    top:0;
-    left:0;
+    display: flex;
+    align-content:center;
+    justify-content: space-between;
+    flex-flow: nowrap column;
     color:whitesmoke;
     font-family:sans-serif;
+    background-color: rgba(00,00,00,00);
+    height: 90vh;
+    width: 80vw;
+    z-index: 1;
 }
-.moon{
-    background-image: url("./media/moon.jpg");
-}
+
 .textA{
     position:absolute;
     top:50%;
@@ -61,7 +71,7 @@ body{
 }
 button{
     color: white;
-    background-color: black;
+    background-color: rgb(00,00,00,0);
     border: none;
     padding:0rem;
     width: 2rem;
@@ -70,19 +80,19 @@ button{
     font-size: 1.5rem;
     text-align: center;
 }
-
+a, a:visited, a:active, a:link {
+    color: inherit;
+    text-decoration: none;
+}
 a:hover, button:hover {
     color: yellow;
     background: rgb(00,00,00,0);
-    cursor:url('./media/galaxy.cur'), auto;
+    cursor:pointer
 }
 .addPadding{
     padding-bottom: 1rem;
 }
-a, a:visited, a:active {
-    color: inherit;
-    text-decoration: none;
-}
+
 .yutani{
     color: yellow;
 }
@@ -96,4 +106,51 @@ footer{
     color: white;
     font-size: xx-small;
     border: gray dashed;
+}
+#readMore{
+border: white solid 2px;
+background: rgb(00,00,00,0);
+align-self: flex-start;
+height: 4rem;
+width: 20rem;
+text-align: center;
+font-size:x-large;
+padding-top: 1rem;
+}
+#aboutPOne{
+align-self: flex-end;
+background: rgb(00,00,00,0);
+height: 10rem;
+width: 20rem;
+padding-right: 3rem;
+}
+#aboutPTwo{
+align-self:flex-start ;
+background: rgb(00,00,00,0);
+height: 10rem;
+width:20rem;
+padding-left: 3rem;
+order: -1;
+padding-top: 4.5rem;
+}
+#flashy{
+font-family:'Times New Roman', Times, serif;
+text-decoration:none;
+animation-name: flashyFlash;
+animation-duration:0.5s;
+animation-timing-function:ease-in;
+animation-iteration-count:Infinite;
+padding-top: 13rem;
+font-size: x-large;
+font-family: 'Beyonders';
+text-shadow: 20px 20px 20px #000000;
+text-align: center;
+padding-left: 20rem;
+color: ghostwhite;
+}
+
+@keyframes flashyFlash{
+50%{color:yellow;}
+50%{color: black;}
+50%{color:yellow;}
 }

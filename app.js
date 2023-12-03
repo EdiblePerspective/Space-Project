@@ -20,3 +20,6 @@ function playTheSongOfMyPeople(){
 }
 song.addEventListener("click", playTheSongOfMyPeople);
 
+document.documentElement.style.scrollBehavior = "smooth"; 
+
+

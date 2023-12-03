@@ -14,9 +14,9 @@
         <div id="navHeader">
             <image src="./media/wycLogo.svg.png" id="logo"></image>
             <h2 class=" addPadding yutani"><strong>Weyland-Yutani</strong></h2>
-                <a href="#" class="addPadding">Home</a>
-                <a href="#"class="addPadding">About</a>
-                <a href="#"class="addPadding">Contact</a>
+                <a href="#home" class="addPadding">Home</a>
+                <a href="#about"class="addPadding">About</a>
+                <a href="#contact"class="addPadding">Contact</a>
             <div class="addPadding">
                 <button id="song"><i class="fa fa-bars"></i></button>
                 <button onclick="trash()"><i class="fa fa-trash"></i></button>
@@ -26,22 +26,19 @@
 </div>
 </header>
 <body>
-<div class="mediaSpecs">
+<div id="home" class="mediaSpecs">
     <video class="mediaSpecs earth" src="./media/earth.mp4" autoplay muted loop></video>
-    <h1 class="text textA"><strong>Explore the Wonders of Space</strong></h1>
+    <h1 class="textA"><strong>Explore the Wonders of Space</strong></h1>
 </div>
-<div class="mediaSpecs">
-    <image class="mediaSpecs" src="./media/starryNight.jpg" ></image>
-    <p class="textB">Woooooooooooo</p>
-    <p>blah blah blah space stuff</p>
+<div id="about" class="mediaSpecs rocket">
+    <div class="textB">
+        <p id="aboutPOne">Apply today for the once in lifetime chance to explore a boundless unknowns of the universe.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Be a pioneer!</strong></p>
+        <p id="aboutPTwo">The Weyland-Yutani Corporation applies science, technology and an unparralleled global network of resources to the pursuit of Building Better Worlds. As the largest company on the planet, we have taken it upon ourselves to constantly explore, expand and discover what lies beyond our own heavens. Every day, our biologists, military scientists, chemical engineers, geologists, mechanics and pilots work across our solar system to advance human interests and life. From Peter Weyland’s first commercially viable cybernetic android to the invention of the atmospheric processor, the Weyland-Yutani Corporation has continued to innovate and work towards the realization of a better world.</p>
+        <a id="readMore" href="https://media.tenor.com/-7jSXzKSJM4AAAAC/blunder-princess-bride-you-fool.gif"><strong>Read more</strong></a>
+    </div>
 </div>
-<div class="mediaSpecs">
-    <image class="mediaSpecs" src="./media/starryNight.jpg" ></image>
-    <p class="textB">Woooooooooooo </p>
-    <p class="textB">blah blah blah space stuff</p>
-</div>
-<div class="mediaSpecs moon">
-    <h2 class=" textB">For only the low low price of your soul* and first-born child (terms and conditions may apply)</h2>
+<div class="mediaSpecs moon" id="contact">
+    <h2 class=" textB" id="flashy">Phone: 0800 00 1066 Positions are limited and running out quickly. Don't delay, book your adventure today!</h2>
 </div>
 </body>
 <footer>
